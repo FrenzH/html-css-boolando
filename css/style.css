@@ -1,0 +1,175 @@
+/*generics*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  img{
+   width: 100%;
+  }
+  
+  /*utilities*/
+
+  .flex{
+    display: flex;
+  }
+  
+  .column{
+    flex-direction: column;
+  }
+  
+  .wrap{
+    flex-wrap: wrap;
+  }
+  
+  .space-between{
+    justify-content: space-between;
+  }
+  
+  .space-around{
+    justify-content: space-around;
+  }
+  
+  /* /flex */
+  
+  .h-100{
+  height: 100vh;
+  }
+  
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    vertical-align: middle;
+  }
+  .margin-top {
+    margin-top: 50px;
+  }
+  
+  .margin-bottom {
+    margin-bottom: 50px;
+  }
+  
+  .bg-white{
+    background-color: #fff;
+  }
+  
+  
+  /*header */
+  header{
+    height: 75px;
+    background-color: #ff6900;
+  }
+  
+  #logo img{
+    width: auto;
+    height: 45px;
+    vertical-align: middle;
+  }
+  
+  
+  .links{
+     color: #fff;
+     text-decoration: none;
+
+  }
+  /*main*/
+  main{
+    flex-grow: 1;
+    overflow-y: auto; 
+  }
+  
+  main > .flex{
+    row-gap: 10px;
+  }
+  
+  /*card*/
+  .card{
+    width: calc(100% / 3);
+    flex-shrink: 0;
+    padding: 0 10px;
+   
+  }
+  
+  
+  .card-img{
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  
+  .price{
+     color: red;
+  }
+
+
+  .card .old-price{
+    color: black;
+    text-decoration: line-through;
+  }
+  
+  .card .brand{
+    font-size: 0.6rem;
+  }
+  
+  .info-product{
+    position: absolute;
+    left: 0px;
+    bottom: 25px;
+  }
+  
+  .info-product .label {
+    color: #fff;
+    background-color: green;
+    padding: 5px
+  }
+  
+  .info-product .label.attention {
+    background-color: red;
+  }
+  
+  
+  .heart{
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+    
+  .hover-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+  }
+  .card:hover .hover-img {
+    visibility: visible;
+  }
+  .card:hover .heart {
+   color: red;
+  }
+  
+  
+  
+  
+ /*footer*/
+  
+  footer {
+    height: 105px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+ 
+  
